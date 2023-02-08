@@ -19,17 +19,16 @@ export default function LittleCard(props: LittleCardprop) {
   return (
     <Container>
       <Card
-        sx={{ maxWidth: 350, marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>
-        <CardMedia
-          sx={{ height: 140 }}
+        sx={{ maxWidth: 350, marginTop: '20px', marginLeft: 'auto', marginRight: 'auto', borderRadius: '10px' }}>
+        <CardMedia sx={{ height: 140 }}
           image={props.img}
           title="title-card"
         />
         <CardContent sx={{ height: 90 }}>
-          <Typography sx={{ wordBreak: "break-word" }} gutterBottom variant="h5" component="div">
+          <Typography sx={{ wordBreak: "break-word", color: 'rgb(0 5 29)' }} gutterBottom variant="h5" component="div">
             {props.title}
           </Typography>
-          <Typography sx={{ wordBreak: "break-word" }} variant="body2" color="text.secondary">
+          <Typography sx={{ wordBreak: "break-word", color: 'rgb(49, 49, 49)' }} variant="body2">
             {props.description}
           </Typography>
         </CardContent>

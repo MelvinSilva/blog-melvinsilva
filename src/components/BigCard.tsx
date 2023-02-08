@@ -26,7 +26,7 @@ export default function BigCard(props: BigCardprop) {
             <Typography sx={{ wordBreak: "break-word" }} gutterBottom variant="h5" component="div">
               <p>{props.title}</p>
             </Typography>
-            <Typography sx={{ wordBreak: "break-word", fontSize: "20px", textAlign: 'justify' }} color="text.secondary">
+            <Typography sx={{ wordBreak: "break-word", fontSize: "18px", textAlign: 'justify' }} color="text.secondary">
               <p dangerouslySetInnerHTML={{ __html: props.content }} />
             </Typography>
           </CardContent>
